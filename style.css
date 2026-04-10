@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom left, #ffe4b5, #faf0e6);
+
+}
+
+/* Glass Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.021);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    height: 450px;
+    width: 350px;
+    box-shadow: 0 8px 32px  rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Form */
+form {
+    margin-top: 1rem;
+}
+
+form input,
+select,
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+/* Input */
+form input {
+    border: none;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.8rem;
+    background: rgba(255, 255, 255, 0.404);
+}
+
+
+/* Dropdown */
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.459);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+.select-container img {
+    width: 30px;
+}
+
+.select-container select {
+    background: transparent;
+}
+
+/* Swap Icon */
+.dropdown i {
+
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+
+}
+
+.dropdown i:hover {
+    transform: rotate(180deg) scale(1.2);
+    
+    border-radius: 10px;
+}
+
+/* Result */
+.msg {
+    margin: 2rem 0;
+    text-align: center;
+    /* color: #fff; */
+    font-weight: bold;
+}
+
+/* Button */
+form button {
+    height: 3rem;
+    background: linear-gradient(45deg, #23a1d1, #5cc1c9);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .dropdown {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .dropdown i {
+        transform: rotate(90deg);
+    }
+}

@@ -10,13 +10,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom left, #ffe4b5, #faf0e6);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
 
 }
 
-/* Glass Container */
+/*  Container */
 .container {
-    background-color: rgba(255, 255, 255, 0.021);
+    background: rgba(255, 255, 255, 0.658);
     backdrop-filter: blur(10px);
     border-radius: 1.5rem;
     padding: 2rem;
@@ -107,7 +108,7 @@ form input {
 /* Button */
 form button {
     height: 3rem;
-    background: linear-gradient(45deg, #23a1d1, #5cc1c9);
+    background: linear-gradient(45deg, #6366f1, #8b5cf6);
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
@@ -119,8 +120,8 @@ form button:hover {
 }
 @media (max-width: 480px) {
     .container {
-        width: 90%;
-        padding: 1.5rem;
+        width: 95%;
+        height: auto; /* IMPORTANT */
     }
 
     .dropdown {
